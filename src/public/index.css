@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+* {
+    background-color: #232323;
+    color: #DDDDDD;
+    font-family: "Hachi Maru Pop", cursive;
+}
+
+.content_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+}
+
+.left-content {
+    flex-grow: 0.1;
+}
+
+.right-content {
+    flex-shrink: 0; /* Prevent it from shrinking */
+}
+
+.about-section {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.role_section {
+    display: flex;
+    align-items: center; 
+}
+
+.role_img {
+    margin-right: 10px;
+}
+
+.role_title{
+    margin-top: 12px;
+}
+
+.email_link{
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+h1, h3, p {
+    margin: 10;
+}
+
+.connect_title{
+    font-weight: 600;
+}
+
+.cv_btn{
+    border: none; 
+    border-radius: 20px; 
+    padding: 10px 20px;
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    font-weight: 800;
+}
+
+.cv_btn:hover{
+    background-color: #333; 
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8%;
+}
+
+.rights-section p {
+    font-size: 12px; 
+    color: #888; 
+}
