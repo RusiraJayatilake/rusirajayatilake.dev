@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio Rusira</title>
-        <link rel="stylesheet" href="../index.css">
-    </head>
-    <body>
-        <div class="content_container">
-            <div class="left-content">
-                <h1>Hi 👋, I'm Rusira Jayatilake</h1>
-                <div class="role_section">
-                    <img alt="Coding" width="20" src="https://assets-v2.lottiefiles.com/a/fd496998-1183-11ee-a6fb-dbe855faee2f/7KmAEjyKbr.gif" class="role_img">
-                    <h3 class="role_title">Backend Developer</h3>
-                </div>
-                <div class="about-section">
-                    <span>- 🌱 I’m currently building <b>**A Travel App**</b></span><br>
-                    <span>- 💬 Ask me about <b>**Django, Flask, MERN Stack, MySQL, SQLite3**</b></span><br>
-                    <span>- 📫 How to reach me <b>**rusirajayatilake96@gmail.com**</b></span><br>
-                </div>
-                <h3 class="connect_title">Connect with me:</h3>
-                <p>
-                    <a href="https://github.com/RusiraJayatilake" target="blank"><img src="https://www.svgrepo.com/show/353783/github-octocat.svg" alt="rusira-jayatilake-0a9b27246" height="30" width="40" /></a>
-                    <a href="https://linkedin.com/in/rusira-jayatilake-0a9b27246" target="blank"><img src="https://www.svgrepo.com/show/448234/linkedin.svg" alt="rusira-jayatilake-0a9b27246" height="30" width="40" /></a>
-                </p>
-                <button class="cv_btn" id="openCVBtn">Download CV</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Rusira</title>
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas> <!-- Add canvas for animation -->
+    
+    <div class="content_container">
+        <div class="left-content">
+            <h1>Hi 👋, I'm Rusira Jayatilake</h1>
+            <div class="role_section">
+                <img alt="Coding" width="20" src="https://assets-v2.lottiefiles.com/a/fd496998-1183-11ee-a6fb-dbe855faee2f/7KmAEjyKbr.gif" class="role_img">
+                <h3 class="role_title">Backend Developer</h3>
             </div>
-            <div class="right-content">
-                <!-- <img alt="Coding" width="400" src="https://gifdb.com/images/high/animated-man-computer-coding-nae6mec378lsg1i3.gif"> -->
-                <img alt="Coding" width="450" src="https://images.squarespace-cdn.com/content/v1/5769fc401b631bab1addb2ab/1541580611624-TE64QGKRJG8SWAIUS7NS/ke17ZwdGBToddI8pDm48kPoswlzjSVMM-SxOp7CV59BZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI6FXy8c9PWtBlqAVlUS5izpdcIXDZqDYvprRqZ29Pw0o/coding-freak.gif">
+            <div class="about-section">
+                <span>- 🌱 I’m currently building <b>**A Travel App**</b></span><br>
+                <span>- 💬 Ask me about <b>**Django, Flask, MERN Stack, MySQL, SQLite3**</b></span><br>
+                <span>- 📫 How to reach me <b>**rusirajayatilake96@gmail.com**</b></span><br>
             </div>
+            <h3 class="connect_title">Connect with me:</h3>
+            <p>
+                <a href="https://github.com/RusiraJayatilake" target="_blank"><img src="https://www.svgrepo.com/show/353783/github-octocat.svg" alt="rusira-jayatilake-0a9b27246" height="30" width="40" /></a>
+                <a href="https://linkedin.com/in/rusira-jayatilake-0a9b27246" target="_blank"><img src="https://www.svgrepo.com/show/448234/linkedin.svg" alt="rusira-jayatilake-0a9b27246" height="30" width="40" /></a>
+            </p>
+            <button class="cv_btn" id="openCVBtn">Download CV</button>
         </div>
+        <div class="right-content">
+            <img alt="Coding" width="450" src="https://images.squarespace-cdn.com/content/v1/5769fc401b631bab1addb2ab/1541580611624-TE64QGKRJG8SWAIUS7NS/ke17ZwdGBToddI8pDm48kPoswlzjSVMM-SxOp7CV59BZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI6FXy8c9PWtBlqAVlUS5izpdcIXDZqDYvprRqZ29Pw0o/coding-freak.gif">
+        </div>
+    </div>
 
-        <footer>
-            <div class="rights-section">
-                <p>&copy; 2024 Your Website. All rights reserved.</p>
-            </div>
-        </footer>
+    <footer>
+        <div class="rights-section">
+            <p>&copy; 2024 Your Website. All rights reserved.</p>
+        </div>
+    </footer>
 
-        <script>
-            document.getElementById('openCVBtn').addEventListener('click', () => {
-                var pdfUrl = '/assets/Rusira Jayatilake CV.pdf';
-                var achor = document.createElement('a');
-                achor.href = pdfUrl;
-
-                achor.target = '_self';
-                achor.click();
-            });
-        </script>
-    </body>
+    <script src="./animations.js"></script> <!-- Include animation script -->
+    <script>
+        document.getElementById('openCVBtn').addEventListener('click', () => {
+            var pdfUrl = '/assets/Rusira Jayatilake CV.pdf';
+            var achor = document.createElement('a');
+            achor.href = pdfUrl;
+            achor.target = '_self';
+            achor.click();
+        });
+    </script>
+</body>
 </html>
