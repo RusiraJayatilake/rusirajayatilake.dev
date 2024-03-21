@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+* {
+    background-color: #232323;
+    color: #DDDDDD;
+    font-family: "Hachi Maru Pop", cursive;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Ensure content is above canvas */
+.content_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    position: relative;
+    z-index: 1;
+}
+
+.left-content {
+    flex-grow: 0.1;
+}
+
+.right-content {
+    flex-shrink: 0;
+}
+
+.about-section {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.role_section {
+    display: flex;
+    align-items: center; 
+}
+
+.role_img {
+    margin-right: 10px;
+}
+
+.role_title{
+    margin-top: 12px;
+}
+
+.email_link{
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+h1, h3, p {
+    margin: 10;
+}
+
+.connect_title{
+    font-weight: 600;
+}
+
+/* CV button css */
+.cv_btn {
+    border: 1px solid rgb(224, 223, 223);
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 800;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden; /* Ensure overflow is hidden to prevent overflowing content */
+}
+
+.cv_btn:hover {
+    background-color: black;
+    color:white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8%;
+}
+
+.rights-section p {
+    font-size: 12px; 
+    color: #888; 
+}
+
+/* Animation css */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Change z-index to -1 to keep it behind content */
+    pointer-events: none;
+}
